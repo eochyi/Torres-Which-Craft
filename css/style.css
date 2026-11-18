@@ -7,8 +7,8 @@
 }
 
 body{
-    background-image: url(image/canvas-bg.jpg);
-    background-repeat:no repeat;
+    /*background-image: url(../images/canvas-bg.jpg); */
+    background-repeat: no-repeat;
     background-attachment:fixed;
     background-size:cover;
 
@@ -18,6 +18,8 @@ body{
     line-height: 1.6;
 }
 
+
+/* Header & Navigation Styling */
 header {
     background-color: #640f4c;
     color: #F9FAFB;
@@ -27,9 +29,81 @@ header {
     padding: 1.2rem 5%;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
 .logo {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Redaction 35', sans-serif;
+    
     font-weight: 800;
     color: #df92c3;
+    line-height: 1.1;
+    white-space: nowrap;
 }
+
+.tagline {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #F9FAFB;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #77ad86;
+}
+
+
+/* Main Content & Spacing */
+main {
+    padding: 3rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url(../images/soft-bg.jpg);
+    border-radius: 12px;
+    color: #121214;
+}
+
+.hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+
