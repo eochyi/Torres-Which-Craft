@@ -1,9 +1,35 @@
 /* tabang tabang tabanggggg */
 
+* {
+    margin: 70;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-image: url(image/canvasbg.jpg);
+    background-image: url(image/canvas-bg.jpg);
     background-repeat:no repeat;
     background-attachment:fixed;
     background-size:cover;
+
+    background-color: #fffbf2;
+    color: #121214;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
 }
 
+header {
+    background-color: #640f4c;
+    color: #F9FAFB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+}
+
+.logo {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #df92c3;
+}
