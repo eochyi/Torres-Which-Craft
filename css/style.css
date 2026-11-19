@@ -1,7 +1,7 @@
 /* tabang tabang tabanggggg */
 
 * {
-    margin: 70;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -21,12 +21,13 @@ body{
 
 /* Header & Navigation Styling */
 header {
-    background-color: #640f4c;
+    background-color: #640f39;
     color: #F9FAFB;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 5%;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -35,30 +36,21 @@ header {
     gap: 1rem;
 }
 
-.top {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 2px;
-}
-
 .logo {
     font-family: 'Redaction 35', sans-serif;
     
+    font-size: 3rem;
     font-weight: 800;
     color: #df92c3;
     line-height: 1.1;
     white-space: nowrap;
 }
 
-.tagline {
-    font-family: 'Inter', sans-serif;
-    font-style: italic;
-}
-
-nav {
+nav ul {
+    list-style:none;
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -74,6 +66,16 @@ nav a:hover, nav a.active {
 
 
 /* Main Content & Spacing */
+
+.tagline {
+    font-family: 'Redaction 35', sans-serif;
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color:#640f39
+}
+
 main {
     padding: 3rem 5%;
     max-width: 1200px;
@@ -87,7 +89,7 @@ section {
 /* Hero Section Styling */
 .hero {
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 64px 32px;
     background-image: url(../images/soft-bg.jpg);
     border-radius: 12px;
     color: #121214;
@@ -104,6 +106,31 @@ section {
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto 2rem auto;
+}
+
+.hero > h2 {
+    color:#640f4c
+}
+
+
+/* CTA Button Styling */
+.cta-button {
+    display: inline-block;
+    background-color: #640f39;
+    color: #F9FAFB;
+    padding: 13px 32px; /* Converted from 0.8rem and 2rem */
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #a81c62;
+    background-image: url(../images/greendots.jpg);
+    opacity: 0.6;
+    color:#000000;
+    transform: translateY(-2px);
 }
 
 
