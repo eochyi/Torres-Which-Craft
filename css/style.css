@@ -136,10 +136,9 @@ section {
 
 .cta-button:hover {
     background-color: #a81c62;
-    background-image: url("../images/greendots.jpg");
+    background-image: linear-gradient(#0000), url("../images/greendots.jpg");
     background-size: cover;
     transform: translateY(-2px);
-    opacity: 0.6;
 }
 
 /* About Section */
@@ -168,7 +167,8 @@ section {
 }
 
 .feature-card {
-    background-color: #94B38A;
+    background-image: linear-gradient(#0000), url("../images/pink.jpg");
+    background-size: cover;
     padding: 32px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
@@ -180,10 +180,6 @@ section {
     font-size: 20px;
 }
 
-#card1 {
-    background-image: url("../images/pink.jpg"); opacity: 0.6;
-    background-size: cover;
-}
 
 /* Gallery Showcase Image */
 /*.showcase-img {
