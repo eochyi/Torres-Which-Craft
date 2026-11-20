@@ -27,6 +27,11 @@ header {
     align-items: center;
     padding: 25px 5%;
     flex-wrap: wrap;
+    position:sticky;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -154,7 +159,7 @@ section {
     text-align: justify;
 }
 
-/* Highlights / Key Features Grid */
+/* Key Features */
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -166,7 +171,7 @@ section {
     background-color: #94B38A;
     padding: 32px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .feature-card h3 {
@@ -175,14 +180,33 @@ section {
     font-size: 20px;
 }
 
+#card1 {
+    background-image: url("../images/pink.jpg"); opacity: 0.6;
+    background-size: cover;
+}
+
 /* Gallery Showcase Image */
-.showcase-img {
+/*.showcase-img {
     width: 30%;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
     margin-top: 16px;
+} */
+
+.img1,
+.img2,
+.img3 {
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.25s ease; box-shadow: 0.25s ease;
+    margin-right: 20px;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
 }
+
 
 /* Footer Styling */
 footer {
@@ -201,3 +225,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+
