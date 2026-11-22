@@ -1,5 +1,17 @@
 /* tabang tabang tabanggggg */
 
+/* Color Palette:
+   - Cream Background: #fffbf2
+   - Dark Charcoal Text: #121214
+   - Burgundy / Plum Accent: #640f39, #640f4c, #a81c62
+   - Soft Pink Highlight: #df92c3
+   - Bright Pink Link Accent: #ef3fac
+   - Sage / Forest Green: #77ad86, #325543, #0d291a
+   - Light & Muted Neutrals: #F9FAFB, #9CA3AF
+*/
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +38,7 @@ header {
     width: 100%;
     
 
-    background-image:linear-gradient(rgba(100, 15, 57, 0.5)), url(../images/burgundy.jpg) ;
+    background-image: linear-gradient(rgba(100, 15, 57, 0.5)), url(../images/burgundy.jpg);
     color: #F9FAFB;
     display: flex;
     justify-content: space-between;
@@ -113,23 +125,21 @@ section {
     background-position: center;
     border-radius: 12px;
     color: #121214;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-.hero h2 {
+.hero h1 {
     font-family: 'Redaction 35', sans-serif;
     font-size: 35px;
     font-weight: 800;
-    margin-bottom: 1rem;
+    color: #640f39;
+    margin-bottom: 16px;
 }
 
 .hero p {
     font-size: 17.6px;
     max-width: 700px;
     margin: 0 auto 32px auto;
-}
-
-.hero > h2 {
-    color: #640f4c;
 }
 
 .hero-img {
@@ -139,7 +149,7 @@ section {
     border-radius: 8px;
     margin-top: -160px;
     margin-bottom: 10px;
-    border-style: groove;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -237,23 +247,24 @@ section {
 }
 
 .gallery img {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-    margin-left: 20px;
-    margin-bottom: 20px;
-    object-fit: cover;
+    display: block;
     width: 200px;
     height: 200px;
-
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
     transition: transform 0.3s ease;
+    
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .gallery img:hover {
     transform: translateY(-7px);
 }
 
-.hidden {
+.gallery img.hidden {
     display: none;
 }
 
