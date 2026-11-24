@@ -19,7 +19,7 @@
 }
 
 body {
-    /* background-image: url("../images/canvas-bg.jpg"); */
+    background-image: linear-gradient(rgba(255, 251, 247, 0.77)), url("../images/field-bw.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -30,12 +30,21 @@ body {
     line-height: 1.6;
 }
 
+
+html,
+body {
+    overflow-x: clip;
+    max-width: 100%;
+}
+
+
 /* Header & Navigation Styling */
 header {
     position: sticky;
     z-index: 1000;
     top: 0;
     width: 100%;
+    min-width: 100vw;
     
 
     background-image: linear-gradient(rgba(100, 15, 57, 0.5)), url(../images/burgundy.jpg);
@@ -115,10 +124,11 @@ section {
 
 
 /* Hero Section Styling */
+
 .hero {
     text-align: center;
     padding: 64px 32px;
-    padding-top: 25px;
+    padding-top: 32px;
     padding-bottom: 30px;
     background-image: url("../images/soft-bg.jpg");
     background-size: cover;
@@ -144,7 +154,7 @@ section {
 
 .hero-img {
     max-width: 400px;
-    max-width: 400px;
+    max-height: 400px;
     margin: 0;
     border-radius: 8px;
     margin-top: -160px;
@@ -171,7 +181,7 @@ section {
     color: #0d291a;
     font-weight: 600;
     background-size: cover;
-    transform: translateY(-7px) ease;
+    transform: translateY(-7px);
 }
 
 
@@ -181,13 +191,14 @@ section {
     float: left;
     margin-right: 35px;
     max-width: 130px;
-    max-width: 130px;
+    max-height: 130px;
 }
 
 .about h2,
 .highlights h2,
-.gallery-preview h2 {
-    font-family: 'Syne', sans-serif;
+.gallery-preview ,
+.course-preview h2 {
+    font-family: 'Redaction 35', sans-serif;
     font-size: 32px;
     margin-bottom: 16px;
     color: #640f39;
@@ -201,13 +212,18 @@ section {
 
 /* Key Features */
 .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
     margin-top: 24px;
 }
 
 .feature-card {
+    flex: 1 1 280px;
+    max-width: 360px;
+
     background-image: linear-gradient(rgba(255, 233, 192, 0.341)), url("../images/lined-paper.jpg");
     background-size: cover;
     padding: 32px;
@@ -223,7 +239,7 @@ section {
 }
 
 .feature-card h3 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 12px;
     font-size: 20px;
     color: #640f39;
@@ -240,10 +256,12 @@ section {
 
 /* Gallery Showcase Image */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;;
-    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 24px;
 }
 
 .gallery img {
@@ -255,9 +273,6 @@ section {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
     transition: transform 0.3s ease;
     
-    overflow: hidden;
-    margin-left: 20px;
-    margin-bottom: 20px;
 }
 
 .gallery img:hover {
@@ -266,6 +281,37 @@ section {
 
 .gallery img.hidden {
     display: none;
+}
+
+.view-more {
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+/* Course Showcase Section */
+.course {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.course iframe {
+    display: block;
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+    
+}
+
+.course iframe:hover {
+    transform: translateY(-7px);
 }
 
 .view-more {
