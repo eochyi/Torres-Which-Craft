@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect — Which Craft</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redaction+35:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/connect.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/pixel.png" height="70" alt="which craft logo">
+            <div class="words">
+                <div class="logo">which craft</div>
+                <p>the sorcery of human made art ⋆｡‧˚.</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Commission</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="connect.html" class="active">Connect</a></li>
+                <li><a href="#">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="connect-hero">
+            <h1>Join the Guild!</h1>
+            <p>Conjure your identity, showcase your creative specialties, and let clients and learners reach out to you directly.</p>
+        </section>
+
+        <section class="signup-section">
+            <form class="artist-form" action="#" method="post">
+
+                <!-- Basic Artist Information -->
+                <fieldset class="form-group-block">
+                    <legend>Artist Identity</legend>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="artistUsername">Username <span class="required">*</span></label>
+                            <input type="text" id="artistUsername" name="username" placeholder="e.g., @matchastudio" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="artistAge">Age <span class="required">*</span></label>
+                            <input type="number" id="artistAge" name="age" min="13" max="120" placeholder="e.g., 21" required>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="artistAddress">Address / Studio Location <span class="required">*</span></label>
+                        <input type="text" id="artistAddress" name="address" placeholder="City, Province / Country" required>
+                    </div>
+                </fieldset>
+
+                <!-- Contact & Social Accounts -->
+                <fieldset class="form-group-block">
+                    <legend>Contact & Social Accounts</legend>
+                    <p class="field-hint">Your Gmail is required for account setup and client inquiries. Social handles are optional.</p>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="artistGmail">Gmail Address <span class="required">*</span></label>
+                            <input type="email" id="artistGmail" name="gmail" placeholder="yourname@gmail.com" pattern=".+@gmail\.com" title="Please enter a valid @gmail.com address" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="artistInstagram">Instagram <span class="optional">(Optional)</span></label>
+                            <input type="text" id="artistInstagram" name="instagram" placeholder="@instagram_handle">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="artistFacebook">Facebook <span class="optional">(Optional)</span></label>
+                            <input type="text" id="artistFacebook" name="facebook" placeholder="Profile name or link">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="artistDiscord">Discord <span class="optional">(Optional)</span></label>
+                            <input type="text" id="artistDiscord" name="discord" placeholder="username">
+                        </div>
+                    </div>
+                </fieldset>
+
+        
+
+                <div class="form-actions">
+                    <button type="submit" class="cta-button">Create Artist Account</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Which Craft. Developed by Max Torres. All rights reserved.</p>
+        <p>Contact: support@whichcraft.com | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
