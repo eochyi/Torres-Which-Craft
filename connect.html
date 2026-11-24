@@ -96,7 +96,126 @@
                     </div>
                 </fieldset>
 
-        
+                <!-- Art Styles (Checkbox Options Only) -->
+                <fieldset class="form-group-block">
+                    <legend>Art Styles <span class="required">*</span></legend>
+                    <p class="field-hint">Select all art styles that match your work:</p>
+
+                    <div class="style-options">
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="realism">
+                            <span>Realism</span>
+                        </label>
+
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="semi-realism">
+                            <span>Semi-Realism</span>
+                        </label>
+
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="impressionism">
+                            <span>Impressionism</span>
+                        </label>
+                        
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="surrealism">
+                            <span>Surrealism</span>
+                        </label>
+                        
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="abstract">
+                            <span>Abstract</span>
+                        </label>
+                        
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="anime">
+                            <span>Anime / Manga</span>
+                        </label>
+
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="cartoon">
+                            <span>Cartoon</span>
+                        </label>
+                        
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="edcart">
+                            <span>Editorial Cartoon</span>
+                        </label>
+
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="caricature">
+                            <span>Caricature</span>
+                        </label>
+                        
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="chibi">
+                            <span>Chibi</span>
+                        </label>
+
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="pixel-art">
+                            <span>Pixel Art</span>
+                        </label>
+
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="vector">
+                            <span>Vector / Graphic</span>
+                        </label>
+
+                        <label class="style-chip">
+                            <input type="checkbox" name="artstyles" value="3d">
+                            <span>3D / Sculpting</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Experience Level (Scrollable Option Selector) -->
+                <fieldset class="form-group-block">
+                    <legend>Experience Level <span class="required">*</span></legend>
+                    <p class="field-hint">Scroll through the levels below and click the one that best fits your skill stage:</p>
+
+                    <div class="level-scroller" role="radiogroup" aria-label="Experience Level">
+                        <label class="level-option">
+                            <input type="radio" name="experience" value="beginner" required>
+                            <div class="level-card">
+                                <strong>Beginner</strong>
+                                <span>Learning core fundamentals and building early pieces.</span>
+                            </div>
+                        </label>
+
+                        <label class="level-option">
+                            <input type="radio" name="experience" value="intermediate">
+                            <div class="level-card">
+                                <strong>Intermediate</strong>
+                                <span>Comfortable with anatomy, color, and personal projects.</span>
+                            </div>
+                        </label>
+
+                        <label class="level-option">
+                            <input type="radio" name="experience" value="advanced">
+                            <div class="level-card">
+                                <strong>Advanced</strong>
+                                <span>Consistent style, strong technique, and open to commissions.</span>
+                            </div>
+                        </label>
+
+                        <label class="level-option">
+                            <input type="radio" name="experience" value="experienced">
+                            <div class="level-card">
+                                <strong>Experienced</strong>
+                                <span>Track record of completed client work and custom orders.</span>
+                            </div>
+                        </label>
+
+                        <label class="level-option">
+                            <input type="radio" name="experience" value="professional">
+                            <div class="level-card">
+                                <strong>Professional</strong>
+                                <span>Commercial / industry experience or teaching masterclasses.</span>
+                            </div>
+                        </label>
+                    </div>
+                </fieldset>
 
                 <div class="form-actions">
                     <button type="submit" class="cta-button">Create Artist Account</button>
