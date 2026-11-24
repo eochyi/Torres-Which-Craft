@@ -1,13 +1,26 @@
 /* Connect Page Banner (matches .hero aesthetic) */
 .connect-hero {
-    margin-top: 10px;
+    
     text-align: center;
-    padding: 44px 32px;
+    padding: 64px 32px;
+    padding-top: 32px;
+    padding-bottom: 30px;
     background-image: url("../images/soft-bg.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 12px;
     color: #121214;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    overflow: visible;
+}
+
+.connect-hero-img {
+    max-width: 250px;
+    max-height: 170px;
+    margin: 0;
+    border-radius: 8px;
+    margin-top: -150px;
+    margin-bottom: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
@@ -20,6 +33,7 @@
 }
 
 .connect-hero p {
+    font-family: 'Inter', sans-serif;
     font-size: 17px;
     max-width: 680px;
     margin: 0 auto;
