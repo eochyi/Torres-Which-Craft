@@ -1,0 +1,35 @@
+/* Hero + Search & Filter Header */
+.commission-hero {
+    margin-top: 10px;
+    text-align: center;
+    padding: 40px 32px;
+    background-image: url("../images/soft-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    color: #121214;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.commission-hero h1 {
+    font-family: 'Redaction 35', sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    color: #640f39;
+    margin-bottom: 10px;
+}
+
+.commission-hero > p {
+    font-size: 16.5px;
+    max-width: 700px;
+    margin: 0 auto 24px auto;
+}
+
+.commission-hero img {
+    max-width: 250px;
+    max-height: 170px;
+    margin: 0;
+    border-radius: 8px;
+    margin-top: -150px;
+}
+

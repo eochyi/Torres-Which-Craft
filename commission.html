@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission — Which Craft</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redaction+35:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/commission.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="images/pixel.png" height="70" alt="which craft logo">
+            <div class="words">
+                <div class="logo">which craft</div>
+                <p>the sorcery of human made art ⋆｡‧˚.</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="commission.html" class="active">Commission</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="connect.html">Connect</a></li>
+                <li><a href="#">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <section class="commission-hero">
+            <img src="images/pencil-skin.png" alt="image for commission" class="commission-img">
+            <h1>Commission Custom Art</h1>
+            <p>Browse curated works from independent human creators, filter by art style and budget, and request bespoke pieces crafted just for you.</p>
+
+            <!-- Search + Filter Bar -->
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <input
+                        type="search"
+                        id="artworkSearch"
+                        placeholder="Search by artwork title or artist name..."
+                        aria-label="Search artworks by title or artist name"
+                    >
+                </div>
+
+                <button
+                    type="button"
+                    class="filter-toggle-btn"
+                    id="filterToggleBtn"
+                    aria-expanded="false"
+                    aria-controls="filterDrawer"
+                >
+                    Filter ▾
+                </button>
+            </div>
+
+            <!-- Collapsible Filter Panel -->
+            <div class="filter-drawer" id="filterDrawer" hidden>
+                <div class="filter-panel-inner">
+                    <div class="filter-group">
+                        <h3>Art Styles</h3>
+                        <div class="filter-style-chips">
+                            <label class="filter-chip">
+                                <input type="checkbox" name="styleFilter" value="realism">
+                                <span>Realism</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="styleFilter" value="semi-realism">
+                                <span>Semi-Realism</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="styleFilter" value="anime">
+                                <span>Anime / Manga</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="styleFilter" value="cartoon">
+                                <span>Cartoon</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="styleFilter" value="chibi">
+                                <span>Chibi</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="styleFilter" value="pixel-art">
+                                <span>Pixel Art</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="styleFilter" value="watercolor">
+                                <span>Watercolor / Traditional</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="styleFilter" value="vector">
+                                <span>Vector / Graphic</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group price-filter-group">
+                        <h3>Price Range (PHP)</h3>
+                        <div class="price-inputs">
+                            <label>
+                                <span>Min (₱)</span>
+                                <input type="number" id="minPrice" min="0" step="50" placeholder="0">
+                            </label>
+                            <span class="price-dash">—</span>
+                            <label>
+                                <span>Max (₱)</span>
+                                <input type="number" id="maxPrice" min="0" step="50" placeholder="10000">
+                            </label>
+                        </div>
+
+                        <div class="filter-drawer-actions">
+                            <button type="button" class="reset-filter-btn" id="resetFiltersBtn">Reset</button>
+                            <button type="button" class="cta-button apply-filter-btn" id="applyFiltersBtn">Apply Filters</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Artworks of the Week (3x3 Grid) -->
+        <section class="featured-week-section" aria-labelledby="featuredHeading">
+            <div class="section-heading">
+                <h2 id="featuredHeading">Featured Artworks of the Week</h2>
+                <p>Nine standout pieces handpicked from our guild creators this week.</p>
+            </div>
+
+            <div class="featured-grid" id="featuredGrid">
+                <article class="art-item"
+                    tabindex="0"
+                    data-title="Sunlit Reverie"
+                    data-artist="Sofia Santos"
+                    data-style="semi-realism"
+                    data-style-label="Semi-Realism"
+                    data-price="1800"
+                    data-turnaround="5–7 days"
+                    data-description="Warm painterly portrait with soft afternoon lighting and textured brushwork."
+                    data-profile="connect.html#sofia-santos"
+                    data-commission="connect.html?artist=Sofia%20Santos">
+                    <img src="images/morena.png" alt="Sunlit Reverie by Sofia Santos">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Semi-Realism</span>
+                        <h3>Sunlit Reverie</h3>
+                        <p class="artist-byline">by Sofia Santos</p>
+                        <p class="art-price">Starts at ₱1,800</p>
+                    </div>
+                </article>
+
+                <article class="art-item"
+                    tabindex="0"
+                    data-title="Midnight Lantern"
+                    data-artist="Kenji Navarro"
+                    data-style="anime"
+                    data-style-label="Anime / Manga"
+                    data-price="1400"
+                    data-turnaround="4–6 days"
+                    data-description="Atmospheric character illustration with glowing paper lanterns and cel-shaded highlights."
+                    data-profile="connect.html#kenji-navarro"
+                    data-commission="connect.html?artist=Kenji%20Navarro">
+                    <img src="images/morena.png" alt="Midnight Lantern by Kenji Navarro">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Anime / Manga</span>
+                        <h3>Midnight Lantern</h3>
+                        <p class="artist-byline">by Kenji Navarro</p>
+                        <p class="art-price">Starts at ₱1,400</p>
+                    </div>
+                </article>
+
+                <article class="art-item"
+                    tabindex="0"
+                    data-title="Botanical Study No. 4"
+                    data-artist="Clara Mendoza"
+                    data-style="watercolor"
+                    data-style-label="Watercolor / Traditional"
+                    data-price="2200"
+                    data-turnaround="7–10 days"
+                    data-description="Hand-painted cold-press watercolor botanical composition scanned at 600 DPI."
+                    data-profile="connect.html#clara-mendoza"
+                    data-commission="connect.html?artist=Clara%20Mendoza">
+                    <img src="images/morena.png" alt="Botanical Study No. 4 by Clara Mendoza">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Watercolor / Traditional</span>
+                        <h3>Botanical Study No. 4</h3>
+                        <p class="artist-byline">by Clara Mendoza</p>
+                        <p class="art-price">Starts at ₱2,200</p>
+                    </div>
+                </article>
+
+                <article class="art-item"
+                    tabindex="0"
+                    data-title="Cobblestone Bakery"
+                    data-artist="Miko Reyes"
+                    data-style="pixel-art"
+                    data-style-label="Pixel Art"
+                    data-price="950"
+                    data-turnaround="3–5 days"
+                    data-description="Cozy isometric storefront scene crafted pixel-by-pixel with custom warm palette."
+                    data-profile="connect.html#miko-reyes"
+                    data-commission="connect.html?artist=Miko%20Reyes">
+                    <img src="images/morena.png" alt="Cobblestone Bakery by Miko Reyes">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Pixel Art</span>
+                        <h3>Cobblestone Bakery</h3>
+                        <p class="artist-byline">by Miko Reyes</p>
+                        <p class="art-price">Starts at ₱950</p>
+                    </div>
+                </article>
+
+                <article class="art-item"
+                    tabindex="0"
+                    data-title="Velvet Gaze"
+                    data-artist="Amara Cruz"
+                    data-style="realism"
+                    data-style-label="Realism"
+                    data-price="3500"
+                    data-turnaround="10–14 days"
+                    data-description="Detailed realistic oil-style digital portrait focusing on skin texture and expression."
+                    data-profile="connect.html#amara-cruz"
+                    data-commission="connect.html?artist=Amara%20Cruz">
+                    <img src="images/morena.png" alt="Velvet Gaze by Amara Cruz">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Realism</span>
+                        <h3>Velvet Gaze</h3>
+                        <p class="artist-byline">by Amara Cruz</p>
+                        <p class="art-price">Starts at ₱3,500</p>
+                    </div>
+                </article>
+
+                <article class="art-item"
+                    tabindex="0"
+                    data-title="Pocket Witch Familiar"
+                    data-artist="Bea Villanueva"
+                    data-style="chibi"
+                    data-style-label="Chibi"
+                    data-price="650"
+                    data-turnaround="2–4 days"
+                    data-description="Expressive chibi mascot character ready for stickers, badges, or stream overlays."
+                    data-profile="connect.html#bea-villanueva"
+                    data-commission="connect.html?artist=Bea%20Villanueva">
+                    <img src="images/morena.png" alt="Pocket Witch Familiar by Bea Villanueva">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Chibi</span>
+                        <h3>Pocket Witch Familiar</h3>
+                        <p class="artist-byline">by Bea Villanueva</p>
+                        <p class="art-price">Starts at ₱650</p>
+                    </div>
+                </article>
+
+                <article class="art-item"
+                    tabindex="0"
+                    data-title="Sunday Skate Club"
+                    data-artist="Leo Bautista"
+                    data-style="cartoon"
+                    data-style-label="Cartoon"
+                    data-price="1200"
+                    data-turnaround="4–5 days"
+                    data-description="Bold linework and energetic cartoon character sheet with two expression variants."
+                    data-profile="connect.html#leo-bautista"
+                    data-commission="connect.html?artist=Leo%20Bautista">
+                    <img src="images/morena.png" alt="Sunday Skate Club by Leo Bautista">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Cartoon</span>
+                        <h3>Sunday Skate Club</h3>
+                        <p class="artist-byline">by Leo Bautista</p>
+                        <p class="art-price">Starts at ₱1,200</p>
+                    </div>
+                </article>
+
+                <article class="art-item"
+                    tabindex="0"
+                    data-title="Archipelago Emblem"
+                    data-artist="Nadine Lim"
+                    data-style="vector"
+                    data-style-label="Vector / Graphic"
+                    data-price="1600"
+                    data-turnaround="3–5 days"
+                    data-description="Scalable geometric editorial illustration delivered in SVG, PDF, and high-res PNG."
+                    data-profile="connect.html#nadine-lim"
+                    data-commission="connect.html?artist=Nadine%20Lim">
+                    <img src="images/morena.png" alt="Archipelago Emblem by Nadine Lim">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Vector / Graphic</span>
+                        <h3>Archipelago Emblem</h3>
+                        <p class="artist-byline">by Nadine Lim</p>
+                        <p class="art-price">Starts at ₱1,600</p>
+                    </div>
+                </article>
+
+                <article class="art-item"
+                    tabindex="0"
+                    data-title="Rainy Jeepney Window"
+                    data-artist="Rafael Aquino"
+                    data-style="semi-realism"
+                    data-style-label="Semi-Realism"
+                    data-price="2500"
+                    data-turnaround="6–8 days"
+                    data-description="Nostalgic evening commuter scene with neon reflections and cinematic depth."
+                    data-profile="connect.html#rafael-aquino"
+                    data-commission="connect.html?artist=Rafael%20Aquino">
+                    <img src="images/morena.png" alt="Rainy Jeepney Window by Rafael Aquino">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Semi-Realism</span>
+                        <h3>Rainy Jeepney Window</h3>
+                        <p class="artist-byline">by Rafael Aquino</p>
+                        <p class="art-price">Starts at ₱2,500</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Pinterest-Style Masonry Feed -->
+        <section class="explore-feed-section" aria-labelledby="exploreHeading">
+            <div class="section-heading">
+                <h2 id="exploreHeading">Explore More Commissions</h2>
+                <p>Scroll through open commissions across every medium, style, and price tier.</p>
+            </div>
+
+            <div class="masonry-feed" id="masonryFeed">
+                <article class="art-item masonry-card"
+                    tabindex="0"
+                    data-title="Tea Shop Cat"
+                    data-artist="Hana Morales"
+                    data-style="watercolor"
+                    data-style-label="Watercolor / Traditional"
+                    data-price="1100"
+                    data-turnaround="5 days"
+                    data-description="Delicate ink-and-wash illustration of a calico cat napping beside ceramic teacups."
+                    data-profile="connect.html#hana-morales"
+                    data-commission="connect.html?artist=Hana%20Morales">
+                    <img src="images/morena.png" alt="Tea Shop Cat by Hana Morales" class="ratio-tall">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Watercolor / Traditional</span>
+                        <h3>Tea Shop Cat</h3>
+                        <p class="artist-byline">by Hana Morales</p>
+                        <p class="art-price">Starts at ₱1,100</p>
+                    </div>
+                </article>
+
+                <article class="art-item masonry-card"
+                    tabindex="0"
+                    data-title="Starlight Paladin"
+                    data-artist="Dante Soriano"
+                    data-style="anime"
+                    data-style-label="Anime / Manga"
+                    data-price="2800"
+                    data-turnaround="7–9 days"
+                    data-description="Full-body fantasy character render with ornate armor detailing and magic effects."
+                    data-profile="connect.html#dante-soriano"
+                    data-commission="connect.html?artist=Dante%20Soriano">
+                    <img src="images/morena.png" alt="Starlight Paladin by Dante Soriano" class="ratio-square">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Anime / Manga</span>
+                        <h3>Starlight Paladin</h3>
+                        <p class="artist-byline">by Dante Soriano</p>
+                        <p class="art-price">Starts at ₱2,800</p>
+                    </div>
+                </article>
+
+                <article class="art-item masonry-card"
+                    tabindex="0"
+                    data-title="Retro Diner Duo"
+                    data-artist="Gelo Ramos"
+                    data-style="cartoon"
+                    data-style-label="Cartoon"
+                    data-price="1500"
+                    data-turnaround="4–6 days"
+                    data-description="Two-character cartoon couple portrait in a 1990s Saturday-morning animation style."
+                    data-profile="connect.html#gelo-ramos"
+                    data-commission="connect.html?artist=Gelo%20Ramos">
+                    <img src="images/morena.png" alt="Retro Diner Duo by Gelo Ramos" class="ratio-wide">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Cartoon</span>
+                        <h3>Retro Diner Duo</h3>
+                        <p class="artist-byline">by Gelo Ramos</p>
+                        <p class="art-price">Starts at ₱1,500</p>
+                    </div>
+                </article>
+
+                <article class="art-item masonry-card"
+                    tabindex="0"
+                    data-title="Forest Shrine Sprite"
+                    data-artist="Miko Reyes"
+                    data-style="pixel-art"
+                    data-style-label="Pixel Art"
+                    data-price="800"
+                    data-turnaround="3 days"
+                    data-description="Animated or static 16-bit portrait bust ideal for indie games and avatars."
+                    data-profile="connect.html#miko-reyes"
+                    data-commission="connect.html?artist=Miko%20Reyes">
+                    <img src="images/morena.png" alt="Forest Shrine Sprite by Miko Reyes" class="ratio-tall">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Pixel Art</span>
+                        <h3>Forest Shrine Sprite</h3>
+                        <p class="artist-byline">by Miko Reyes</p>
+                        <p class="art-price">Starts at ₱800</p>
+                    </div>
+                </article>
+
+                <article class="art-item masonry-card"
+                    tabindex="0"
+                    data-title="Charcoal Study: Elder"
+                    data-artist="Amara Cruz"
+                    data-style="realism"
+                    data-style-label="Realism"
+                    data-price="3200"
+                    data-turnaround="9–12 days"
+                    data-description="High-contrast realism bust capturing fine detail, light falloff, and emotion."
+                    data-profile="connect.html#amara-cruz"
+                    data-commission="connect.html?artist=Amara%20Cruz">
+                    <img src="images/morena.png" alt="Charcoal Study: Elder by Amara Cruz" class="ratio-square">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Realism</span>
+                        <h3>Charcoal Study: Elder</h3>
+                        <p class="artist-byline">by Amara Cruz</p>
+                        <p class="art-price">Starts at ₱3,200</p>
+                    </div>
+                </article>
+
+                <article class="art-item masonry-card"
+                    tabindex="0"
+                    data-title="Matcha Latte Emote Pack"
+                    data-artist="Bea Villanueva"
+                    data-style="chibi"
+                    data-style-label="Chibi"
+                    data-price="750"
+                    data-turnaround="2–3 days"
+                    data-description="Set of 3 custom chibi expression badges sized for Discord and Twitch."
+                    data-profile="connect.html#bea-villanueva"
+                    data-commission="connect.html?artist=Bea%20Villanueva">
+                    <img src="images/morena.png" alt="Matcha Latte Emote Pack by Bea Villanueva" class="ratio-wide">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Chibi</span>
+                        <h3>Matcha Latte Emote Pack</h3>
+                        <p class="artist-byline">by Bea Villanueva</p>
+                        <p class="art-price">Starts at ₱750</p>
+                    </div>
+                </article>
+
+                <article class="art-item masonry-card"
+                    tabindex="0"
+                    data-title="Golden Hour Violinist"
+                    data-artist="Sofia Santos"
+                    data-style="semi-realism"
+                    data-style-label="Semi-Realism"
+                    data-price="2400"
+                    data-turnaround="6–8 days"
+                    data-description="Half-body semi-realistic character illustration with warm rim lighting."
+                    data-profile="connect.html#sofia-santos"
+                    data-commission="connect.html?artist=Sofia%20Santos">
+                    <img src="images/morena.png" alt="Golden Hour Violinist by Sofia Santos" class="ratio-tall">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Semi-Realism</span>
+                        <h3>Golden Hour Violinist</h3>
+                        <p class="artist-byline">by Sofia Santos</p>
+                        <p class="art-price">Starts at ₱2,400</p>
+                    </div>
+                </article>
+
+                <article class="art-item masonry-card"
+                    tabindex="0"
+                    data-title="Zine Cover Poster"
+                    data-artist="Nadine Lim"
+                    data-style="vector"
+                    data-style-label="Vector / Graphic"
+                    data-price="1900"
+                    data-turnaround="4–6 days"
+                    data-description="Print-ready editorial poster illustration with custom typography framing."
+                    data-profile="connect.html#nadine-lim"
+                    data-commission="connect.html?artist=Nadine%20Lim">
+                    <img src="images/morena.png" alt="Zine Cover Poster by Nadine Lim" class="ratio-square">
+                    <div class="art-item-meta">
+                        <span class="art-badge">Vector / Graphic</span>
+                        <h3>Zine Cover Poster</h3>
+                        <p class="artist-byline">by Nadine Lim</p>
+                        <p class="art-price">Starts at ₱1,900</p>
+                    </div>
+                </article>
+            </div>
+
+            <p class="empty-results-msg" id="emptyResultsMsg" hidden>
+                No artworks match your current search or filter criteria. Try adjusting your filters!
+            </p>
+        </section>
+    </main>
+
+    <!-- Centered Artwork Detail Modal -->
+    <div class="artwork-modal-backdrop" id="artworkModal" role="dialog" aria-modal="true" aria-labelledby="modalArtTitle" hidden>
+        <div class="artwork-modal-box">
+            <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close artwork details">&times;</button>
+
+            <div class="modal-media">
+                <img id="modalArtImg" src="" alt="">
+            </div>
+
+            <div class="modal-details">
+                <span class="art-badge" id="modalArtStyle">Style</span>
+                <h2 id="modalArtTitle">Artwork Title</h2>
+                <p class="modal-artist-name">Created by <strong id="modalArtistName">Artist Name</strong></p>
+
+                <div class="modal-specs">
+                    <div>
+                        <span class="spec-label">Starting Price</span>
+                        <strong id="modalArtPrice">₱0</strong>
+                    </div>
+                    <div>
+                        <span class="spec-label">Est. Turnaround</span>
+                        <strong id="modalArtTurnaround">3–5 days</strong>
+                    </div>
+                </div>
+
+                <p class="modal-description" id="modalArtDescription">Artwork description goes here.</p>
+
+                <div class="modal-actions">
+                    <a href="connect.html" class="modal-secondary-btn" id="visitProfileBtn">Visit Artist's Profile</a>
+                    <a href="connect.html" class="cta-button modal-primary-btn" id="commissionArtistBtn">Commission Artist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Which Craft. Developed by Max Torres. All rights reserved.</p>
+        <p>Contact: support@whichcraft.com | <a href="#">Terms of Service</a></p>
+    </footer>
+
+
+</body>
+</html>
