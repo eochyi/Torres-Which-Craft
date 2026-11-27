@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn — Which Craft</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redaction+35:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/learn.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="images/pixel.png" height="70" alt="which craft logo">
+            <div class="words">
+                <div class="logo">which craft</div>
+                <p>the sorcery of human made art ⋆｡‧˚.</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="commission.html">Commission</a></li>
+                <li><a href="learn.html" class="active">Learn</a></li>
+                <li><a href="connect.html">Connect</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="learn-hero">
+            <h1>Art Workshops &amp; Structured Lessons</h1>
+            <p>Watch video lectures from independent artists, download practice files, start with free previews, or unlock full guild enrollment tiers.</p>
+        </section>
+
+        <!-- Top Tag Filter Bag -->
+        <section class="filter-bag-section" aria-label="Filter lessons by tag">
+            <div class="filter-bag-box">
+                <div class="filter-bag-header">
+                    <div>
+                        <h2>Tag Filter Bag</h2>
+                        <p>Select one or more tags to filter videos matching those topics.</p>
+                    </div>
+                    <button type="button" class="clear-tags-btn" id="clearTagsBtn">Clear Tags</button>
+                </div>
+
+                <div class="filter-bag-tags" id="filterBagTags">
+                    <label class="tag-pill">
+                        <input type="checkbox" name="lessonTag" value="free-preview">
+                        <span>Free Preview</span>
+                    </label>
+                    <label class="tag-pill">
+                        <input type="checkbox" name="lessonTag" value="anatomy">
+                        <span>Anatomy</span>
+                    </label>
+                    <label class="tag-pill">
+                        <input type="checkbox" name="lessonTag" value="lighting">
+                        <span>Lighting &amp; Color</span>
+                    </label>
+                    <label class="tag-pill">
+                        <input type="checkbox" name="lessonTag" value="lineart">
+                        <span>Lineart &amp; Ink</span>
+                    </label>
+                    <label class="tag-pill">
+                        <input type="checkbox" name="lessonTag" value="watercolor">
+                        <span>Watercolor</span>
+                    </label>
+                    <label class="tag-pill">
+                        <input type="checkbox" name="lessonTag" value="pixel-art">
+                        <span>Pixel Art</span>
+                    </label>
+                    <label class="tag-pill">
+                        <input type="checkbox" name="lessonTag" value="character-design">
+                        <span>Character Design</span>
+                    </label>
+                    <label class="tag-pill">
+                        <input type="checkbox" name="lessonTag" value="pro-tier">
+                        <span>Guild Tier</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3-Column Scrollable Videos -->
+        <section class="lessons-catalog-section" aria-labelledby="lessonsHeading">
+            <div class="section-heading">
+                <h2 id="lessonsHeading">Video Lessons</h2>
+                <p>Click any lesson card to open the video lecture player and project files.</p>
+            </div>
+
+            <div class="lessons-grid" id="lessonsGrid">
+                <!-- Card 1 -->
+                <article class="lesson-card"
+                    tabindex="0"
+                    data-title="Proportions & Gesture Foundations"
+                    data-instructor="Sofia Santos"
+                    data-tags="free-preview anatomy character-design"
+                    data-tag-labels="Free Preview, Anatomy, Character Design"
+                    data-tier="Free Preview">
+                    <div class="lesson-media-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="Proportions & Gesture Foundations"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <span class="access-badge is-free">Free Preview</span>
+                    </div>
+                    <div class="lesson-details-frame">
+                        <span class="lesson-meta-line">Free Preview • Sofia Santos</span>
+                        <h3>Proportions &amp; Gesture Foundations</h3>
+                        <p class="lesson-file-note">Includes: gesture-workbook-pack.zip</p>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="lesson-card"
+                    tabindex="0"
+                    data-title="Warm Bounce Light & Rim Highlights"
+                    data-instructor="Sofia Santos"
+                    data-tags="lighting pro-tier"
+                    data-tag-labels="Lighting & Color, Guild Tier"
+                    data-tier="Guild Tier — ₱650">
+                    <div class="lesson-media-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="Proportions & Gesture Foundations"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <span class="access-badge is-paid">Guild Tier</span>
+                    </div>
+                    <div class="lesson-details-frame">
+                        <span class="lesson-meta-line">Guild Tier • Sofia Santos</span>
+                        <h3>Warm Bounce Light &amp; Rim Highlights</h3>
+                        <p class="lesson-file-note">Includes: lighting-layers-psd.zip</p>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="lesson-card"
+                    tabindex="0"
+                    data-title="Clean Line Weight & Tapered Strokes"
+                    data-instructor="Kenji Navarro"
+                    data-tags="free-preview lineart character-design"
+                    data-tag-labels="Free Preview, Lineart & Ink, Character Design"
+                    data-tier="Free Preview">
+                    <div class="lesson-media-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="Proportions & Gesture Foundations"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <span class="access-badge is-free">Free Preview</span>
+                    </div>
+                    <div class="lesson-details-frame">
+                        <span class="lesson-meta-line">Free Preview • Kenji Navarro</span>
+                        <h3>Clean Line Weight &amp; Tapered Strokes</h3>
+                        <p class="lesson-file-note">Includes: custom-ink-brushes.zip</p>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="lesson-card"
+                    tabindex="0"
+                    data-title="Botanical Washes & Wet-on-Wet Edges"
+                    data-instructor="Clara Mendoza"
+                    data-tags="watercolor lighting pro-tier"
+                    data-tag-labels="Watercolor, Lighting & Color, Guild Tier"
+                    data-tier="Guild Tier — ₱750">
+                    <div class="lesson-media-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="Proportions & Gesture Foundations"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <span class="access-badge is-paid">Guild Tier</span>
+                    </div>
+                    <div class="lesson-details-frame">
+                        <span class="lesson-meta-line">Guild Tier • Clara Mendoza</span>
+                        <h3>Botanical Washes &amp; Wet-on-Wet Edges</h3>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="lesson-card"
+                    tabindex="0"
+                    data-title="Isometric Storefronts in Pixel Art"
+                    data-instructor="Miko Reyes"
+                    data-tags="pixel-art lighting pro-tier"
+                    data-tag-labels="Pixel Art, Lighting & Color, Guild Tier"
+                    data-tier="Guild Tier — ₱600">
+                    <div class="lesson-media-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="Proportions & Gesture Foundations"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <span class="access-badge is-paid">Guild Tier</span>
+                    </div>
+                    <div class="lesson-details-frame">
+                        <span class="lesson-meta-line">Guild Tier • Miko Reyes</span>
+                        <h3>Isometric Storefronts in Pixel Art</h3>
+                        <p class="lesson-file-note">Includes: isometric-grid-palettes.zip</p>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="lesson-card"
+                    tabindex="0"
+                    data-title="Facial Planes & Expressive Features"
+                    data-instructor="Amara Cruz"
+                    data-tags="free-preview anatomy"
+                    data-tag-labels="Free Preview, Anatomy"
+                    data-tier="Free Preview">
+                    <div class="lesson-media-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="Proportions & Gesture Foundations"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <span class="access-badge is-free">Free Preview</span>
+                    </div>
+                    <div class="lesson-details-frame">
+                        <span class="lesson-meta-line">Free Preview • Amara Cruz</span>
+                        <h3>Facial Planes &amp; Expressive Features</h3>
+                    </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="lesson-card"
+                    tabindex="0"
+                    data-title="Silhouettes & Story-Driven Costumes"
+                    data-instructor="Leo Bautista"
+                    data-tags="character-design lineart pro-tier"
+                    data-tag-labels="Character Design, Lineart & Ink, Guild Tier"
+                    data-tier="Guild Tier — ₱700">
+                    <div class="lesson-media-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="Proportions & Gesture Foundations"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <span class="access-badge is-paid">Guild Tier</span>
+                    </div>
+                    <div class="lesson-details-frame">
+                        <span class="lesson-meta-line">Guild Tier • Leo Bautista</span>
+                        <h3>Silhouettes &amp; Story-Driven Costumes</h3>
+                        <p class="lesson-file-note">Includes: character-turnaround-sheets.zip</p>
+                    </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="lesson-card"
+                    tabindex="0"
+                    data-title="Color Harmonies for Moody Scenes"
+                    data-instructor="Rafael Aquino"
+                    data-tags="lighting pixel-art"
+                    data-tag-labels="Lighting & Color, Pixel Art"
+                    data-tier="Free Preview">
+                    <div class="lesson-media-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="Proportions & Gesture Foundations"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <span class="access-badge is-free">Free Preview</span>
+                    </div>
+                    <div class="lesson-details-frame">
+                        <span class="lesson-meta-line">Free Preview • Rafael Aquino</span>
+                        <h3>Color Harmonies for Moody Scenes</h3>
+                        <p class="lesson-file-note">Includes: moody-color-scripts.zip</p>
+                    </div>
+                </article>
+
+                <!-- Card 9 -->
+                <article class="lesson-card"
+                    tabindex="0"
+                    data-title="Full Illustration Pipeline: Sketch to Finish"
+                    data-instructor="Sofia Santos"
+                    data-tags="anatomy lighting lineart character-design pro-tier"
+                    data-tag-labels="Anatomy, Lighting & Color, Lineart & Ink, Character Design, Guild Tier"
+                    data-tier="Guild Tier — ₱850">
+                    <div class="lesson-media-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="Proportions & Gesture Foundations"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <span class="access-badge is-paid">Guild Tier</span>
+                    </div>
+                    <div class="lesson-details-frame">
+                        <span class="lesson-meta-line">Guild Tier • Sofia Santos</span>
+                        <h3>Full Illustration Pipeline: Sketch to Finish</h3>
+                        <p class="lesson-file-note">Includes: full-illustration-source.zip</p>
+                    </div>
+                </article>
+            </div>
+
+            <p class="empty-lessons-msg" id="emptyLessonsMsg" hidden>
+                No video lessons match the selected tags. Try clearing or switching tags in the Filter Bag.
+            </p>
+        </section>
+
+        <!-- Free Preview vs. Paid Enrollment Tiers -->
+        <section class="tiers-section" aria-labelledby="tiersHeading">
+            <div class="section-heading">
+                <h2 id="tiersHeading">Free Previews &amp; Enrollment Tiers</h2>
+                <p>Start with free core lessons or upgrade for full project files, critiques, and all workshops.</p>
+            </div>
+
+            <div class="tiers-grid">
+                <article class="tier-card">
+                    <span class="tier-tag">Free Preview</span>
+                    <h3>Apprentice Preview</h3>
+                    <p class="tier-price">₱0 <span>/ free lessons</span></p>
+                    <ul class="tier-benefits">
+                        <li>Access to marked Free Preview video lectures</li>
+                        <li>Starter reference &amp; brush sample packs</li>
+                        <li>Browse all workshop syllabi</li>
+                    </ul>
+                    <button type="button" class="tier-btn tier-secondary" data-select-tag="free-preview">View Free Lessons</button>
+                </article>
+
+                <article class="tier-card tier-featured">
+                    <span class="tier-tag">Most Popular</span>
+                    <h3>Guild Pass</h3>
+                    <p class="tier-price">₱650 <span>/ month</span></p>
+                    <ul class="tier-benefits">
+                        <li>Unlimited streaming of all video lectures</li>
+                        <li>Downloadable PSD, CSP, brush &amp; reference files</li>
+                        <li>Monthly live critique &amp; Q&amp;A replays</li>
+                    </ul>
+                    <a href="connect.html" class="cta-button tier-btn">Enroll in Guild Pass</a>
+                </article>
+
+                <article class="tier-card">
+                    <span class="tier-tag"> mentorship</span>
+                    <h3>Atelier Tier</h3>
+                    <p class="tier-price">₱1,450 <span>/ month</span></p>
+                    <ul class="tier-benefits">
+                        <li>Everything in Guild Pass included</li>
+                        <li>1 monthly personalized portfolio/piece review</li>
+                        <li>Early access to new workshop releases</li>
+                    </ul>
+                    <a href="connect.html" class="tier-btn tier-secondary">Join Atelier Tier</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Video Lecture Player Modal -->
+    <div class="player-modal-backdrop" id="playerModal" role="dialog" aria-modal="true" aria-labelledby="playerTitle" hidden>
+        <div class="player-modal-box">
+            <button type="button" class="player-close-btn" id="playerCloseBtn" aria-label="Close video player">&times;</button>
+
+            <div class="player-stage">
+                <div class="mock-video-screen">
+                    <img id="playerPosterImg" src="" alt="">
+                    <div class="video-overlay-bar">
+                        <span class="player-tier-pill" id="playerTierBadge">Free Preview</span>
+                        <span class="player-duration-label" id="playerDuration">18:40</span>
+                    </div>
+                    <div class="video-center-play">
+                        <button type="button" class="play-demo-btn" id="playDemoBtn">▶ Play Lecture Preview</button>
+                        <p class="playback-status" id="playbackStatus">Ready to stream lecture</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="player-info">
+                <span class="player-instructor" id="playerInstructor">Instructor Name</span>
+                <h2 id="playerTitle">Lesson Title</h2>
+                <p class="player-description" id="playerDescription">Lesson description.</p>
+
+                <div class="project-file-box">
+                    <div>
+                        <span class="file-label">Downloadable Project File</span>
+                        <strong id="playerFileName">project-files.zip</strong>
+                        <p id="playerVideoNote">Includes layered files and reference sheets.</p>
+                    </div>
+                    <a href="#" class="download-file-btn" id="downloadFileBtn" download>Download File</a>
+                </div>
+
+                <div class="player-actions">
+                    <a href="connect.html" class="cta-button player-enroll-btn" id="playerEnrollBtn">Enroll / Access Lesson</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Which Craft. Developed by Max Torres. All rights reserved.</p>
+        <p>Contact: support@whichcraft.com | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
